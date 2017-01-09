@@ -36,7 +36,7 @@ import API from './modules/API/API';
 import UIEvents from './service/UI/UIEvents';
 import getTokenData from "./modules/tokendata/TokenData";
 import translation from "./modules/translation/translation";
-import remoteControl from "./modules/remotecontrol/remotecontrol";
+import remoteControl from "./modules/remotecontrol/RemoteControl";
 
 const ConferenceEvents = JitsiMeetJS.events.conference;
 
