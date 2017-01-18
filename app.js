@@ -299,6 +299,9 @@ $(document).ready(function () {
 
     APP.translation.init(settings.getLanguage());
 
+    // Force enable the API if jwt token is passed because most probably
+    // jitsi meet is displayed inside of wrapper that will need to communicate
+    // with jitsi meet.
     APP.API.init(APP.tokenData.jwt ? {
         forceEnable: true,
         enabledEvents: ["video-conference-joined", "video-conference-left",
